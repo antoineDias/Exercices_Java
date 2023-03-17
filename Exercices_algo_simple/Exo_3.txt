@@ -1,0 +1,18 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner (System.in);
+        System.out.printf("Veuillez saisir un prix de fabrication :");
+        double prixFab = sc.nextInt();
+        System.out.printf("Veuillez saisir un prix de vente :");
+        double prixVente = sc.nextInt();
+        if (prixFab < prixVente){
+            System.out.println("Perte de : " + (prixVente - prixFab));
+        } else {
+            System.out.println("Profit de : " + (prixFab - prixVente));
+        }
+    }
+
+}

@@ -1,0 +1,15 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner (System.in);
+        System.out.printf("Veuillez saisir un premier nombre :");
+        double nb1 = sc.nextInt();
+        System.out.printf("Veuillez saisir un deuxième nombre :");
+        double nb2 = sc.nextInt();
+        double somme = nb1+nb2;
+        System.out.println(nb1 + " + " + nb2 + " = " + somme);
+    }
+
+}

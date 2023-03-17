@@ -1,0 +1,18 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+
+        System.out.printf("Veuillez saisir un nombre de marche:");
+        double nombre = sc.nextInt();
+        double resultat = 0;
+        String etage = "";
+
+        for (int i=0; i<nombre; i++){
+            etage += "*";
+            System.out.println(etage);
+        }
+    }
+}

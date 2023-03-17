@@ -1,0 +1,26 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner (System.in);
+
+        System.out.printf("Veuillez saisir un premier nombre :");
+        double nombre1 = sc.nextInt();
+
+        System.out.printf("Veuillez saisir un deuxième nombre :");
+        double nombre2 = sc.nextInt();
+
+        System.out.printf("Veuillez saisir un troisième nombre :");
+        double nombre3 = sc.nextInt();
+
+        if ( nombre1 > nombre2 && nombre1 > nombre3){
+            System.out.println("Le nombre le plus grand est " + nombre1);
+        } else if (nombre2 > nombre1 && nombre2 > nombre3){
+            System.out.println("Le nombre le plus grand est " + nombre2);
+        } else {
+            System.out.println("Le nombre le plus grand est " + nombre3);
+        }
+    }
+
+}

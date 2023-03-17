@@ -1,0 +1,18 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+
+        System.out.printf("Veuillez saisir un nombre :");
+        double nombre = sc.nextInt();
+        double resultat = 0;
+
+        for (int i=0; i<nombre; i++){
+            resultat += i;
+            System.out.print(i + " + ");
+        }
+        System.out.print(nombre + " = " + (resultat+nombre));
+    }
+}

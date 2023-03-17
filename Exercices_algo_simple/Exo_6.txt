@@ -1,0 +1,31 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner (System.in);
+
+        System.out.printf("Veuillez saisir un premier opérande :");
+        double operande1 = sc.nextInt();
+
+        System.out.printf("Veuillez saisir un opérateur :");
+        String operateur = sc.next();
+
+        System.out.printf("Veuillez saisir un second opérande :");
+        double operande2 = sc.nextInt();
+
+        if (operateur.equals("+")){
+            System.out.println(operande1 + " + " + operande2 + " = " + (operande1 + operande2) );
+        } else if (operateur.equals("-")){
+            System.out.println(operande1 + " - " + operande2 + " = " + (operande1 - operande2) );
+
+        } else if (operateur.equals("*")) {
+            System.out.println(operande1 + " * " + operande2 + " = " + (operande1 * operande2) );
+        } else if (operateur.equals("/")) {
+            System.out.println(operande1 + " / " + operande2 + " = " + (operande1 / operande2) );
+        } else {
+            System.out.println("Veuillez rentrer une commande correcte (un operande avec uniquement un nombre, et un operateur parmis +, -, *, /");
+        }
+    }
+
+}
